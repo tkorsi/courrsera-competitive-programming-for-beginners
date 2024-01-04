@@ -26,7 +26,7 @@ int main() {
     }
     int cur_sum = 1;
     dp[0] = 1;
-    for(int i = 0; i < n; i++){
+    for(int i = 0; i < n; ++i){
         if(i >= k){
             cur_sum = sub(cur_sum, dp[i - k], m);
         }
